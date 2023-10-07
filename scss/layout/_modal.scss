@@ -1,0 +1,79 @@
+.modals-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.zindex {
+    z-index: 0;
+}
+
+.modal {
+    &__window {
+    }
+
+    &__window-inner {
+        position: relative;
+        margin: 10px 10px;
+    }
+
+    &__window-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        cursor: pointer;
+        transition: transform .3s;
+        &:hover {
+            transform: rotate(45deg);
+        }
+
+        path {
+            stroke: var(--accent-color);
+        }
+    }
+
+    &__window-image {
+        display: block;
+        max-width: 100%;
+        max-height: 95vh;
+        border-radius: 8px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .modal {
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+}
+
+@media screen and (max-width: 490px) {
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+}

@@ -1,0 +1,28 @@
+.gallery {
+
+    &__box {
+        columns: 3;
+        gap: 15px;
+    }
+
+    &__image {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 15px;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery__box {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .gallery__box {
+        columns: 1;
+    }
+}
+

@@ -1,0 +1,97 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+// ----------------- priest-page -------------------------//
+
+.priest-page {
+
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    &__title {
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 4%;
+    }
+
+    &__wrapper-left {
+        min-width: 45%;
+        max-width: 45%;
+    }
+
+    &__text {
+        font-size: 21px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    &__figure {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: var(--border-radius);
+        margin-bottom: 10px;
+    }
+
+    &__figcaption {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .priest-page {
+
+		&__wrapper {
+            flex-wrap: wrap;
+		}
+
+		&__wrapper-left {
+            min-width: 100%;
+		}
+
+		&__subtitle {
+            font-size: 24px;
+		}
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .priest-page {
+        padding-top: 70px;
+    }
+}

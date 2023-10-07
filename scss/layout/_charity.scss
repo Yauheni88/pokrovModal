@@ -1,0 +1,23 @@
+.charity {
+    background-color: var(--bg-color);
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        max-width: 800px;
+        font-size: 20px;
+        margin: 15px auto 25px auto;
+    }
+
+    &__link {
+        @extend %btn-blue;
+    }
+}
